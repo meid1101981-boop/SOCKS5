@@ -20,7 +20,6 @@ jobs:
           curl -s "https://raw.githubusercontent.com/VPSLabCloud/VPSLab-Free-Proxy-List/refs/heads/main/socks5_all.txt" > all.txt
           curl -s "https://github.com/proxygenerator1/ProxyGenerator/raw/refs/heads/main/Unstable/socks5.txt" >> all.txt
           curl -s "https://raw.githubusercontent.com/ClearProxy/checked-proxy-list/main/socks5/raw/all.txt" >> all.txt
-          curl -s "https://https://free-proxy-list.net/" >> all.txt
           sort -u all.txt -o all.txt
 
       - name: Commit and push updated file
